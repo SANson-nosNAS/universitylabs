@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task10</title>
+    <script>
+        let salary = parseFloat(prompt("Введите сумму вашей зарплаты:"));
+        let result = salary;
+        alert(`Ваша зарплата: ${salary.toFixed(2)} рублей`);
+
+        let prem = result * 0.15;
+        result += prem;
+        alert(`Премия: ${prem.toFixed(2)} рублей. Сумма на баллансе: ${result.toFixed(2)} рублей`);
+
+        let taxes = result * 0.10;
+        result -= taxes;
+        alert(`Налоги: ${taxes.toFixed(2)} рублей. Оставшаяся сумма: ${result.toFixed(2)} рублей`);
+
+        result -= 90;
+        alert(`Потратил в магазине - 90 рублей. Оставшаяся сумма: ${result.toFixed(2)} рублей`);
+
+        let fract = result / 2;
+        alert(`Ваша доля и доля вашей жены: ${fract.toFixed(2)} рублей`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

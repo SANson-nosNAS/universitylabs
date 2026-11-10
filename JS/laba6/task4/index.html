@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task4</title>
+</head>
+<body>
+    <input type="number"> + <input type="name"> = <span>?</span><br>
+    <button onclick="summ()">Нажмите, чтобы сложить.</button>
+</body>
+<script>
+    let inputs = document.querySelectorAll("input");
+    let result = document.querySelector("span");
+    let sum;
+    function summ() {
+        sum = parseInt(inputs[0].value) + parseInt(inputs[1].value);
+        result.textContent = sum;
+    }
+</script>
+</html>

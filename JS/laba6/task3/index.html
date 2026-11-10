@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task3</title>
+    <style>
+        .lastp {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <p>При нажатии на кнопку текст в абзаце поменяется</p>
+    <button onclick="func()">Нажмите на меня</button>
+</body>
+<script>
+    let count = 1;
+
+    let p = document.querySelector("p");
+
+    function func() {
+        count++;
+        if (count % 2 == 0) {
+            p.innerHTML = "Изменился и стал <b>жирный!</b>";
+        } else {
+            p.innerHTML = "При нажатии на кнопку текст в абзаце поменяется";
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+</head>
+<body>
+    <h2 class="pr">Заголовок с классом pr</h2>
+    <p class="pr">Абзац с классом pr</p>
+    <p class="pr">Абзац с классом pr</p>
+    <p>Просто абзац, не меняется</p>
+    <button onclick="func()">Кнопка</button>
+</body>
+<script>
+    function func() {
+        let elems = document.querySelectorAll('.pr');
+        for (elem in elems) {
+            elems[elem].textContent = parseInt(elem) + 1;
+        }
+    }
+
+
+</script>
+</html>
